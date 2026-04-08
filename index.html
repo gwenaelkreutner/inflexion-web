@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inflexion — AI Cycling Coach</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <span class="logo">Inflexion</span>
+      <ul class="nav-links">
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#support">Support</a></li>
+        <li><a href="https://t.me/PaceCoachBot" target="_blank" class="btn btn-outline">Open in Telegram</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="badge">Powered by Strava · Free Beta</div>
+      <h1>Your personal cycling coach,<br /><span class="gradient-text">right in Telegram.</span></h1>
+      <p class="hero-sub">Inflexion connects to your Strava, analyzes your training load, and builds personalized weekly plans — so you peak when it matters.</p>
+      <div class="hero-cta">
+        <a href="https://t.me/PaceCoachBot" target="_blank" class="btn btn-primary">Start coaching →</a>
+        <a href="#how-it-works" class="btn btn-ghost">See how it works</a>
+      </div>
+      <div class="hero-metrics">
+        <div class="metric"><span class="metric-value">TSS</span><span class="metric-label">Training Stress Score</span></div>
+        <div class="metric-sep"></div>
+        <div class="metric"><span class="metric-value">CTL</span><span class="metric-label">Fitness</span></div>
+        <div class="metric-sep"></div>
+        <div class="metric"><span class="metric-value">ATL</span><span class="metric-label">Fatigue</span></div>
+        <div class="metric-sep"></div>
+        <div class="metric"><span class="metric-value">TSB</span><span class="metric-label">Form</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <h2>How it works</h2>
+        <p>Three steps to smarter training.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">01</div>
+          <h3>Connect Strava</h3>
+          <p>Authorize Inflexion to read your activities. Your data stays private and is only used to coach you.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-number">02</div>
+          <h3>Get your plan</h3>
+          <p>Inflexion computes your fitness, fatigue, and form, then builds a weekly plan adapted to your level.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-number">03</div>
+          <h3>Train & improve</h3>
+          <p>Each completed ride is automatically analyzed. Your plan evolves with you in real time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section section-alt" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>Everything you need to train smarter</h2>
+        <p>Science-backed metrics, zero complexity.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Training Load Analysis</h3>
+          <p>CTL, ATL, TSB and TSS computed after every ride using the industry-standard PMC model.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📅</div>
+          <h3>Personalized Weekly Plans</h3>
+          <p>Plans generated around your current fitness, fatigue, and upcoming race goals.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Strava Integration</h3>
+          <p>Automatic activity sync via Strava webhook. Ride, and your coach updates in seconds.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3>Adherence Tracking</h3>
+          <p>Stay consistent with a 0–100 adherence score and milestone rewards to keep you motivated.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔔</div>
+          <h3>Session Reminders</h3>
+          <p>Daily morning reminders with your planned workout delivered straight to Telegram.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📈</div>
+          <h3>Form Tracking</h3>
+          <p>Know exactly when you are fresh, tired, or peaking. Time your efforts for maximum output.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GET STARTED -->
+  <section class="section" id="get-started">
+    <div class="container">
+      <div class="section-header">
+        <h2>Ready to find your inflexion point?</h2>
+        <p>Open Telegram and start your first session in under 2 minutes.</p>
+      </div>
+      <div class="getstarted-inner">
+        <div class="qr-block">
+          <div id="qrcode"></div>
+          <span class="qr-label">Scan with your phone</span>
+        </div>
+        <div class="getstarted-text">
+          <ol class="steps-list">
+            <li>Scan the QR code or search <strong>@PaceCoachBot</strong> in Telegram</li>
+            <li>Type <code>/start</code> to begin onboarding</li>
+            <li>Connect your Strava account when prompted</li>
+            <li>Set your FTP and receive your first training plan</li>
+          </ol>
+          <a href="https://t.me/PaceCoachBot" target="_blank" class="btn btn-primary">Open @PaceCoachBot →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUPPORT -->
+  <section class="section section-alt" id="support">
+    <div class="container">
+      <div class="section-header">
+        <h2>Support</h2>
+        <p>We're here to help.</p>
+      </div>
+      <div class="support-grid">
+        <div class="support-card">
+          <h3>Connect Strava</h3>
+          <p>During onboarding, Inflexion will send you a secure link to authorize your Strava account. Tap it, log in, and authorize read access to your activities. That's it.</p>
+          <p>If you need to reconnect, use the <code>/connect_strava</code> command in the bot.</p>
+        </div>
+        <div class="support-card">
+          <h3>Data & Privacy</h3>
+          <p>Inflexion only reads your Strava activities. We never post on your behalf, never share your data, and never sell it. You can revoke access from your Strava settings at any time.</p>
+        </div>
+        <div class="support-card">
+          <h3>Contact us</h3>
+          <p>Having an issue or a question? Reach us directly:</p>
+          <a href="mailto:gwenaelkreutner@gmail.com" class="support-link">gwenaelkreutner@gmail.com</a>
+          <br />
+          <a href="https://t.me/PaceCoachBot" target="_blank" class="support-link">Message @PaceCoachBot</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="logo">Inflexion</span>
+      <p>Built for cyclists who want to train smarter, not just harder.</p>
+      <p class="footer-sub">Not affiliated with Strava, Inc. · <a href="mailto:gwenaelkreutner@gmail.com">gwenaelkreutner@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    new QRCode(document.getElementById("qrcode"), {
+      text: "https://t.me/PaceCoachBot",
+      width: 160,
+      height: 160,
+      colorDark: "#111827",
+      colorLight: "#ffffff",
+      correctLevel: QRCode.CorrectLevel.M
+    });
+  </script>
+
+</body>
+</html>
