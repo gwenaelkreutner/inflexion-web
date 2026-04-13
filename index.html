@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Inflexion — AI Cycling Coach</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </head>
 <body>
 
@@ -125,7 +123,7 @@
       </div>
       <div class="getstarted-inner">
         <div class="qr-block">
-          <div id="qrcode"></div>
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAIAAAAgbqG5AAADK0lEQVR4nO3dsZHbOABAUdlzFTC7Dtx/Ne7gMrWwF/hnDExRAEjtvBevKFvzByIEkvjx9fX1gMfjpw+BP6RApECkQKRApECkQKRApECkQKRA/nkcsP3763Gd53+///rvOfI35458xP449/8M94wKRApECkQKRAq8MoM4d0Z6zsoz/3mzg+eBV137Ge4ZFYgUiBSIFIgUeG8GsTfv1/u7zTK2U/OFc0c+YtS7GxWIFIgUiBSIFBg9g1hp1LrAkTP2bdp84W6MCkQKRApECkQKfPIMYu+73r+wklGBSIFIgUiBSIHRM4iVv8zPO6vfTh151DrFtasbRgUiBSIFIgUiBd6bQdztl/l5VyhtN5utzGNUIFIgUiBSIFIgP77HjnLnVgHmPRX2ExkViBSIFIgUiBR4bz+Ic3s0nHuvvVFHPvfM1W13nHnzl3OvOndkowKRApECkQKRAq/MIObNBc6918oZzfdYJTnCqECkQKRApECkwOirmEbNF0adD99t17m9lf9TaxC8wBcEkQKRApEC713FtPLKopWrCc+bXZ21crdrowKRApECkQKRAlfsBzFvB7d5u1Q/p91bPW8uYA2Ct/iCIFIgUiBSYP59EKOOM+88/1rbwtWNI4wKRApECkQKRArMv4pp5bNS513ptE27W+FusyejApECkQKRApECo9cg7vbE11Gv2rv2GUrug2A6XxBECkQKRAqMXoMY5ci597l5x8r7IO72bNsjjApECkQKRApECnzyntQrr1l6Ltylet4ajae58gJfEEQKRApECtx1DWJv1LOYztkGHfluO9ztGRWIFIgUiBSQAkOe5jrv7Hflvgnznhx77SfmKibe4lyBSIFIgUiB0ftBXHte/T3u9b6WUYFIgUiBSIFIgSt2lLuba3e7HrXj3ihGBSIFIgUiBSIFPnkGsXJX6G3alU6jduje/407qXmLLwgiBSIFIgVGzyBW3hd87ix63pNjt2nrAvN2f9gzKhApECkQKRAp8N4M4trr/O+/M93zZvd6e5orL/AFQaRApECkwCfvB8EMRgUiBSIFIgUiBSIFIgUiBSIFIgUiBR5//A86JXcjYNEnAAAAAABJRU5ErkJggg==" alt="QR Code @PaceCoachBot" width="160" height="160" style="border-radius:8px;border:1px solid #E5E7EB;padding:12px;" />
           <span class="qr-label">Scan with your phone</span>
         </div>
         <div class="getstarted-text">
@@ -178,16 +176,6 @@
     </div>
   </footer>
 
-  <script>
-    new QRCode(document.getElementById("qrcode"), {
-      text: "https://t.me/PaceCoachBot",
-      width: 160,
-      height: 160,
-      colorDark: "#111827",
-      colorLight: "#ffffff",
-      correctLevel: QRCode.CorrectLevel.M
-    });
-  </script>
 
 </body>
 </html>
